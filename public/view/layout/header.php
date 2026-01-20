@@ -31,7 +31,7 @@
 
     <div class="linear-bg"></div>
 
-    <div class="d-flex flex-wrap justify-content-lg-end p-3 gap-2 mb-5">
+    <div class="d-flex flex-wrap justify-content-lg-end p-3 gap-2 mb-5  animate__animated animate__fadeIn animate__delay-1s">
         <?php if ($_SESSION['admin_verify'] === 'verify'): ?>
             <a href="/add" class="btn btn-sm btn-outline-light"> <i class="bi bi-plus"></i> Thêm tiết mục</a>
             <a href="/btc" class="btn btn-sm btn-outline-light"> <i class="bi bi-list"></i> Danh sách tiết mục</a>

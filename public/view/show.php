@@ -1,10 +1,13 @@
 <link rel="stylesheet" href="<?= URL_P_V ?>css/show.css">
-<div class="d-flex align-items-center justify-content-center flex-column gap-2 py-3">
-    <div class="h2 text-light text-center mt-5">
+<div class="d-flex align-items-center justify-content-center flex-column">
+    <div class="h2 text-light text-center mt-5 animate__animated animate__backInDown">
         <?= $name_show ?>
     </div>
-    <div class="fs-5 text-score">Số điểm chấm</div>
-    <span data-score="<?= rand(70, 100) ?>" class="score-value"></span>
+    <div class="position-relative animate__animated animate__bounceIn">
+        <span data-score="<?= rand(70, 100) ?>" class="score-value"></span>
+        <div class="position-absolute translate-middle fs-5 text-score text-nowrap">Số điểm trung bình</div>
+    </div>
+    <div class="text-score animate__animated animate__backInUp animate__delay-1s">Số lượt vote : <span class="text-light"><?= rand(50,70) ?></span></div>
 
 </div>
 

@@ -42,6 +42,7 @@
             <div class="modal-footer d-flex justify-content-center">
                 <form action="/score" method="post" class="d-flex justify-content-center gap-2">
                     <input type="hidden" name="value_score" value="">
+                    <input type="hidden" name="id_show" value="<?= get_action_uri(1) ?>">
                     <button type="button" class="btn btn-sm px-3 btn-outline-light" data-bs-dismiss="modal">Huỷ</button>
                     <button type="submit" class="btn  btn-sm px-3 btn-light">Xác nhận</button>
                 </form>

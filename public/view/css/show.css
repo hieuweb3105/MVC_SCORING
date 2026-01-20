@@ -5,6 +5,8 @@
 
 .text-score {
     color: #acb25a;
+    top: 10vh;
+    right: 0;
 }
 
 @media (max-width:1199px) {
