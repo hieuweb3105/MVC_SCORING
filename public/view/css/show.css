@@ -1,0 +1,14 @@
+.score-value {
+    font-size: 20vw;
+    color: #acb25a;
+}
+
+.text-score {
+    color: #acb25a;
+}
+
+@media (max-width:1199px) {
+    .score-value {
+        font-size: 50vw;
+    }
+}
