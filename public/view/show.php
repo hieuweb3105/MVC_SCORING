@@ -1,38 +1,25 @@
-<link rel="stylesheet" href="<?= URL_P_V ?>css/show.css">
-<div class="d-flex align-items-center justify-content-center flex-column">
-    <div class="h2 text-light text-center mt-5 animate__animated animate__backInDown">
-        <?= $name_show ?>
+<link rel="stylesheet" href="<?= URL_P_V ?>css/show.css?v=1.0.1">
+<div style="margin-top:15vh" class="row mx-0 justify-content-center align-items-center">
+    <div class="col-12 col-md-8 mt-lg-5">
+        <table class="table text-light">
+            <thead>
+                <tr>
+                    <th class="bg-dark-20 blur-6 text-light border-0">Chương trình</th>
+                    <th class="bg-dark-20 blur-6 text-light border-0 col-5">Điểm số</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach (LIST_SHOW as $show): ?>
+                    <tr class="align-middle fw-light">
+                        <td class="bg-dark-20 blur-6 text-light border-0" class="fw-light"><?= $show['name'] ?></td>
+                        <td class="bg-dark-20 blur-6 text-light border-0">
+                            <div class="progess-group">
+                                <div style="width:<?= rand(70, 100) ?>%" class="progess-line"></div>
+                            </div>
+                        </td>
+                    </tr>
+                <?php endforeach ?>
+            </tbody>
+        </table>
     </div>
-    <div class="position-relative animate__animated animate__bounceIn">
-        <span data-score="<?= rand(70, 100) ?>" class="score-value"></span>
-        <div class="position-absolute translate-middle fs-5 text-score text-nowrap">Số điểm trung bình</div>
-    </div>
-    <div class="text-score animate__animated animate__backInUp animate__delay-1s">Số lượt vote : <span class="text-light"><?= rand(50,70) ?></span></div>
-
 </div>
-
-<script>
-    document.querySelectorAll('.score-value').forEach(el => {
-        const target = parseInt(el.getAttribute('data-score'));
-        const duration = 4000; // Tổng thời gian chạy (2 giây)
-        let startTime = null;
-
-        function animate(currentTime) {
-            if (!startTime) startTime = currentTime;
-            const progress = Math.min((currentTime - startTime) / duration, 1);
-
-            // Công thức Ease Out: Giúp số tăng nhanh lúc đầu và chậm dần về sau
-            // progress = 1 - (1 - progress) ^ 3 (Cubic Ease Out)
-            const easeProgress = 1 - Math.pow(1 - progress, 3);
-
-            const currentValue = Math.floor(easeProgress * target);
-            el.textContent = currentValue;
-
-            if (progress < 1) {
-                requestAnimationFrame(animate);
-            }
-        }
-
-        requestAnimationFrame(animate);
-    });
-</script>
