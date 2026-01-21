@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="<?= URL_P_V ?>css/btc_home.css">
 
-<?php if ($_SESSION['admin_verify'] !== 'verify'): ?>
+<?php if ($_SESSION['btc'] !== 'verify'): ?>
     <div style="height:80vh" class="d-flex align-items-center justify-content-center px-3">
         <div class="d-flex flex-column gap-3 col-12 col-md-6 col-lg-4">
             <form action="/btc" method="post" class="d-flex flex-column align-items-center">
