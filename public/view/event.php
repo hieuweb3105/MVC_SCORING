@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="<?= URL_P_V ?>css/event.css">
 
-<div class="d-flex flex-column align-items-center justify-content-center gap-3">
+<div style="padding-top:15vh" class="d-flex flex-column align-items-center justify-content-center gap-3">
 
     <div class="text-center text-light h4">
         <?= $name_show ?>
@@ -11,14 +11,6 @@
     </div>
 
     <div class="d-flex align-items-center justify-content-center gap-3">
-        <button value-score="1" data-bs-toggle="modal" data-bs-target="#modal-score" class="btn btn-outline-light btn-score rounded-circle d-inline">1</button>
-        <button value-score="2" data-bs-toggle="modal" data-bs-target="#modal-score" class="btn btn-outline-light btn-score rounded-circle d-inline">2</button>
-        <button value-score="3" data-bs-toggle="modal" data-bs-target="#modal-score" class="btn btn-outline-light btn-score rounded-circle d-inline">3</button>
-        <button value-score="4" data-bs-toggle="modal" data-bs-target="#modal-score" class="btn btn-outline-light btn-score rounded-circle d-inline">4</button>
-        <button value-score="5" data-bs-toggle="modal" data-bs-target="#modal-score" class="btn btn-outline-light btn-score rounded-circle d-inline">5</button>
-    </div>
-    <div class="d-flex align-items-center justify-content-center gap-3">
-        <button value-score="6" data-bs-toggle="modal" data-bs-target="#modal-score" class="btn btn-outline-light btn-score rounded-circle d-inline">6</button>
         <button value-score="7" data-bs-toggle="modal" data-bs-target="#modal-score" class="btn btn-outline-light btn-score rounded-circle d-inline">7</button>
         <button value-score="8" data-bs-toggle="modal" data-bs-target="#modal-score" class="btn btn-outline-light btn-score rounded-circle d-inline">8</button>
         <button value-score="9" data-bs-toggle="modal" data-bs-target="#modal-score" class="btn btn-outline-light btn-score rounded-circle d-inline">9</button>
