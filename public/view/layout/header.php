@@ -20,7 +20,7 @@
     <!-- CDN Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- CSS Custom -->
-    <link rel="stylesheet" href="<?= URL_P_V ?>css/main.css?v=1.0.5">
+    <link rel="stylesheet" href="<?= URL_P_V ?>css/main.css?v=1.0.6">
     <link rel="stylesheet" href="<?= URL_P_V ?>css/header.css?v=1.0.3">
     <link rel="stylesheet" href="<?= URL_P_V ?>css/footer.css">
 </head>
@@ -33,7 +33,7 @@
 
     <div class="d-flex flex-wrap justify-content-lg-end p-3 gap-2 mb-5  animate__animated animate__fadeIn animate__delay-1s">
         <?php if ($_SESSION['admin_verify'] === 'verify'): ?>
-            <a href="/add" class="btn btn-sm btn-outline-light"> <i class="bi bi-plus"></i> Thêm tiết mục</a>
+            <a href="/show_all" class="btn btn-sm btn-outline-light"> <i class="bi bi-easel"></i> Trình chiếu tất cả</a>
             <a href="/btc" class="btn btn-sm btn-outline-light"> <i class="bi bi-list"></i> Danh sách tiết mục</a>
             <a href="/" class="btn btn-sm btn-outline-light"> <i class="bi bi-house"></i> Trang chủ</a>
         <?php else: ?>

@@ -19,6 +19,9 @@ body {
     --bs-shadow-box-light : transparent;
     --bs-shadow-box-dark : transparent;
 
+    --bs-gold : #dde849;
+    --bs-gold-blur : #dde84941;
+
     background: url('/asset/image/bg.jpg');
     background-size: cover;
     background-position: center;

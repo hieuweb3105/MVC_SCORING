@@ -1,25 +1,20 @@
-<link rel="stylesheet" href="<?= URL_P_V ?>css/show.css?v=1.0.1">
-<div style="margin-top:15vh" class="row mx-0 justify-content-center align-items-center">
-    <div class="col-12 col-md-8 mt-lg-5">
-        <table class="table text-light">
-            <thead>
-                <tr>
-                    <th class="bg-dark-20 blur-6 text-light border-0">Chương trình</th>
-                    <th class="bg-dark-20 blur-6 text-light border-0 col-5">Điểm số</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach (LIST_SHOW as $show): ?>
-                    <tr class="align-middle fw-light">
-                        <td class="bg-dark-20 blur-6 text-light border-0" class="fw-light"><?= $show['name'] ?></td>
-                        <td class="bg-dark-20 blur-6 text-light border-0">
-                            <div class="progess-group">
-                                <div style="width:<?= rand(70, 100) ?>%" class="progess-line"></div>
-                            </div>
-                        </td>
-                    </tr>
-                <?php endforeach ?>
-            </tbody>
-        </table>
+<link rel="stylesheet" href="<?= URL_P_V ?>css/show.css">
+
+<div style="padding-top:8vh;padding-bottom:8vh;color:#acb25a" class="display-5 fw-bold text-center">
+    Công Bố Kết Quả
+</div>
+<div class="d-flex flex-column align-items-center justify-content-center col-12 col-md-8 text-center w-100">
+    <div class="col-12 col-md-8 col-lg-6 d-flex flex-column gap-2">
+        <div class="text-center text-light h4">
+        <?= $name_show ?>
+    </div>
+
+    <div class="text-light-60 my-3">
+        Mức điểm trung bình đạt được
+    </div>
+
+    <div class="progess-group">
+        <div style="width:<?= rand(70, 100) ?>%" class="progess-line"></div>
+    </div>
     </div>
 </div>
