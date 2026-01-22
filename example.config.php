@@ -62,7 +62,6 @@ const BOOL_LOADER       = false;         //  hiệu ứng page loader
 //  [*] TIME CUSTOM
 
 const TIME_SHOW_TOAST   = 3000;       //  thời gian hiển thị thông báo toast (milisecond - mili giây)
-const TIME_LOAD_SLIDE   = 2500;       //  thời gian chuyển slide carousel (milisecond - mili giây)
 const TIME_CALL_APS     = 2000;       // thời gian gọi api progress score (milisecond - mili giây)
 
 //  [*] LIMIT CUSTOM
