@@ -1,5 +1,5 @@
 <?php
-
+test_server();
 // Case : Xác thực quyền BTC
 if(isset($_POST['admin_verify']) && $_POST['admin_verify']) {
     $input_verify = $_POST['admin_verify'];

@@ -13,4 +13,8 @@
 <!-- CDN JQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+<div class="text-light-40 small position-absolute bottom-0 pb-1 ps-2">
+    ID : <?= $_COOKIE['token_guest'] ?? 'value not found' ?>
+</div>
+
 </html>
