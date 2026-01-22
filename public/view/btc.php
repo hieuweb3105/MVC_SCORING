@@ -19,9 +19,9 @@
             <thead>
                 <tr>
                     <th>Chương trình</th>
-                    <th>Trạng thái</th>
-                    <th>Lượt vote</th>
-                    <th>Điểm</th>
+                    <th class="text-center">Trạng thái</th>
+                    <th class="text-center">Lượt vote</th>
+                    <th class="text-end">Điểm</th>
                     <th class="text-end pe-lg-3">Hành động</th>
                 </tr>
             </thead>
@@ -29,9 +29,9 @@
                 <?php foreach ($list_show as $show): ?>
                     <tr class="align-middle fw-light">
                         <th class="fw-light"><?= $show['name_show_event'] ?></th>
-                        <td><?= 'Đã chấm' ?></td>
-                        <td class="text-center"><?= rand(50, 80) ?></td>
-                        <td class="text-center"><?= rand(70, 100) ?></td>
+                        <td class="text-center"><?= '...' ?></td>
+                        <td class="text-center"><?= count_turn_vote($show['id_show_event']) ?></td>
+                        <td class="text-end"><?= sum_score($show['id_show_event']) ?: 0 ?> / <?= config_get_value('config_guest') * 10 ?></td>
                         <td class="d-flex justify-content-end flex-column flex-lg-row gap-1">
                             <a href="/show/<?= $show['id_show_event'] ?>" class="btn btn-sm btn-outline-light" title="Trình chiếu điểm"><i class="bi bi-easel"></i></a>
                             <a href="/pause/<?= $show['id_show_event'] ?>" class="btn btn-sm btn-outline-light disabled" title="Tạm dừng chấm điểm"><i class="bi bi-pause"></i><a>

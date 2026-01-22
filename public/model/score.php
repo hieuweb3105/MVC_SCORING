@@ -49,6 +49,13 @@ function count_turn_vote($id_show) {
     );
 }
 
+function sum_score($id_show) {
+    return pdo_query_value(
+        'SELECT SUM(score) FROM score WHERE id_show_event = ?'
+        ,$id_show
+    );
+}
+
 function get_average_score($id_show) {
     // var
     $sum_score = 0;

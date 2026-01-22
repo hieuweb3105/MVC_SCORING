@@ -2,6 +2,8 @@
 
 # [MODEL]
 model('public','show_event');
+model('public','score');
+model('public','config');
 
 # [HANDLE]
 // Case : Xác thực quyền BTC
