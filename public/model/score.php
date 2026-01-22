@@ -15,15 +15,36 @@ function save_score($id_show,$value_score) {
 
 /**
  * Lấy danh sách đã chấm điểm theo token guest
- * @return array | string
+ * @return array
  */
 function get_list_score_by_token_guest() {
     if(!empty($_COOKIE['token_guest'])) {
-        $list = pdo_query(
+        return pdo_query(
             'SELECT * FROM score WHERE token_guest = ?',
             $_COOKIE['token_guest']
         );
-        if($list) return $list;
     }
-    return '';
+    return [];
+}
+
+/**
+ * Lấy danh sách đã chấm điểm theo id show
+ * @param mixed $id_show
+ * @return array
+ */
+function get_list_score_by_id_show($id_show) {
+    if(!empty($_COOKIE['token_guest'])) {
+        return pdo_query(
+            'SELECT * FROM score WHERE id_show_event = ?',
+            $id_show
+        );
+    }
+    return [];
+}
+
+function count_turn_vote($id_show) {
+    return pdo_query_value(
+        'SELECT count(id_score) FROM score WHERE id_show_event = ?',
+        $id_show
+    );
 }

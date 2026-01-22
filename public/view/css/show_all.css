@@ -15,14 +15,14 @@
     }
 }
 
-.progess-group {
+.progress-group {
     width: 100%;
     height: 14px;
     background-color: var(--bs-gold-blur);
     position: relative;
 }
 
-.progess-line {
+.progress-line {
     position: absolute;
     left: 0;
     top: 0;

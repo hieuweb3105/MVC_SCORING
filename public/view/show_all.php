@@ -13,8 +13,8 @@
                     <tr class="align-middle fw-light">
                         <td class="bg-dark-20 blur-6 text-light border-0" class="fw-light"><?= $show['name'] ?></td>
                         <td class="bg-dark-20 blur-6 text-light border-0">
-                            <div class="progess-group">
-                                <div style="width:<?= rand(70, 100) ?>%" class="progess-line"></div>
+                            <div class="progress-group">
+                                <div style="width:<?= rand(70, 100) ?>%" class="progress-line"></div>
                             </div>
                         </td>
                     </tr>

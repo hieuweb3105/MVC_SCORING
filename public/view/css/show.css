@@ -1,26 +1,28 @@
-.progess-group {
+.progress-group {
     width: 100%;
     background-color: var(--bs-gold-blur);
     position: relative;
 }
 
-.progess-line {
+.progress-line {
     position: absolute;
     left: 0;
     top: 0;
     background-color: var(--bs-gold);
+    width: 0%;
+    transition: width 0.5s ease-in-out;
 }
 
-.progess-group,
-.progess-line {
+.progress-group,
+.progress-line {
     height: 35px
 }
 
 
 @media (max-width:1199px) {
 
-    .progess-group,
-    .progess-line {
+    .progress-group,
+    .progress-line {
         height: 24px;
     }
 }
