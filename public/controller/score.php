@@ -23,17 +23,9 @@ if(isset($_POST['value_score']) && $_POST['value_score'] && isset($_POST['id_sho
 if(get_action_uri(1) === 'get_width' && get_action_uri(2)) {
     // input
     $id_show = get_action_uri(2);
-    // get list
-    $list_score = get_list_score_by_id_show($id_show);
-    // sum score
-    if(!empty($list_score)) {
-        foreach ($list_score as $score) {
-            $sum_score += $score['score'];
-            $avarage_score = ($sum_score/(config_get_value('config_guest')*10))*100;
-        }
-    }
+    // return
     view_json(200,[
-        'value' => $avarage_score,
+        'value' => get_average_score($id_show),
         'vote' => count_turn_vote($id_show),
     ]);
 }

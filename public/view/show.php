@@ -10,7 +10,7 @@
         </div>
 
         <div class="text-light-80 mt-3 mb-2">
-            Mức điểm trung bình đạt được
+            Mức điểm đạt được hiện tại
         </div>
 
         <div class="progress-group">

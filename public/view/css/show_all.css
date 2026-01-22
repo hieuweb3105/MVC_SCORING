@@ -17,7 +17,7 @@
 
 .progress-group {
     width: 100%;
-    height: 14px;
+    height: 20px;
     background-color: var(--bs-gold-blur);
     position: relative;
 }
@@ -27,5 +27,5 @@
     left: 0;
     top: 0;
     background-color: var(--bs-gold);
-    height: 14px;
+    height: 20px;
 }

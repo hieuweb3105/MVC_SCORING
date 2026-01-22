@@ -48,3 +48,19 @@ function count_turn_vote($id_show) {
         $id_show
     );
 }
+
+function get_average_score($id_show) {
+    // var
+    $sum_score = 0;
+    // get list
+    $list_score = get_list_score_by_id_show($id_show);
+    // sum score
+    if(!empty($list_score)) {
+        foreach ($list_score as $score) {
+            $sum_score += $score['score'];
+            $avarage_score = ($sum_score/(config_get_value('config_guest')*10))*100;
+        }
+        return $avarage_score;
+    }
+    return 0;
+}
