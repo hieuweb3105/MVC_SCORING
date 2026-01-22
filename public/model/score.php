@@ -60,7 +60,7 @@ function get_average_score($id_show) {
             $sum_score += $score['score'];
             $avarage_score = ($sum_score/(config_get_value('config_guest')*10))*100;
         }
-        return $avarage_score;
+        return ($avarage_score > 100) ? 100 : $avarage_score;
     }
     return 0;
 }
