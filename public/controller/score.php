@@ -28,7 +28,7 @@ if(get_action_uri(1) === 'get_width' && get_action_uri(2)) {
     if(!empty($list_score)) {
         foreach ($list_score as $score) {
             $sum_score += $score['score'];
-            $avarage_score = ($sum_score/(LIMIT_GUEST*10))*100;
+            $avarage_score = ($sum_score/(config_get_value('config_guest')*10))*100;
         }
     }
     view_json(200,[

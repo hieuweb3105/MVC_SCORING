@@ -62,7 +62,6 @@ function view($type_of_role, $page, $title, $data, $off_layout = null)
     if($type_of_role != 'admin' && $type_of_role != 'public') die(_s_me_error . 'Type khai báo <strong>' . $type_of_role . '</strong> không phù hợp trong mảng [public,admin] ' . _e_me_error);
     if(file_exists($type_of_role . '/view/' . $page . '.php')) {
         if (!empty($data)) extract($data);
-        require_once $type_of_role . '/model/header.php';
         if(!$off_layout) require_once $type_of_role . '/view/layout/header.php';
         require_once $type_of_role . '/view/' . $page . '.php';
         if(!$off_layout) require_once $type_of_role . '/view/layout/footer.php';

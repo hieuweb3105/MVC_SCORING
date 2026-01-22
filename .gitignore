@@ -5,7 +5,7 @@
 # Ẩn thư mục asset
 /asset/*
 
-config.php
+/config.php
 rule.txt
 public/controller/deploy-src.php
 

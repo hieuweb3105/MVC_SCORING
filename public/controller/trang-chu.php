@@ -4,6 +4,7 @@
 
 # [MODEL]
 model('public','show_event');
+model('public','config');
 
 # [DATA]
 $data = [
