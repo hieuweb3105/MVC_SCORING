@@ -14,5 +14,10 @@ if(isset($_POST['admin_verify']) && $_POST['admin_verify']) {
     }else toast_create('failed','Mật khẩu xác thực không chính xác !');
 }
 
+# [DATA]
+$data = [
+    'list_show' => get_list_show()
+];
+
 # [RENDER]
-view('public','btc','Setting',null);
+view('public','btc','Setting',$data);

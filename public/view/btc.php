@@ -26,16 +26,16 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach (LIST_SHOW as $show): ?>
+                <?php foreach ($list_show as $show): ?>
                     <tr class="align-middle fw-light">
-                        <th class="fw-light"><?= $show['name'] ?></th>
+                        <th class="fw-light"><?= $show['name_show_event'] ?></th>
                         <td><?= 'Đã chấm' ?></td>
                         <td class="text-center"><?= rand(50, 80) ?></td>
                         <td class="text-center"><?= rand(70, 100) ?></td>
                         <td class="d-flex justify-content-end flex-column flex-lg-row gap-1">
-                            <a href="/show/<?= $show['id'] ?>" class="btn btn-sm btn-outline-light"><i class="bi bi-easel"></i><small>Trình chiếu</small></a>
-                            <a href="/pause/<?= $show['id'] ?>" class="btn btn-sm btn-outline-light"><i class="bi bi-pause"></i><small>Dừng chấm</small></a>
-                            <a href="/pause/<?= $show['id'] ?>" class="btn btn-sm btn-outline-light"><i class="bi bi-play"></i><small>Bắt đầu chấm</small></a>
+                            <a href="/show/<?= $show['id_show_event'] ?>" class="btn btn-sm btn-outline-light"><i class="bi bi-easel"></i><small>Trình chiếu</small></a>
+                            <a href="/pause/<?= $show['id_show_event'] ?>" class="btn btn-sm btn-outline-light"><i class="bi bi-pause"></i><small>Dừng chấm</small></a>
+                            <a href="/pause/<?= $show['id_show_event'] ?>" class="btn btn-sm btn-outline-light"><i class="bi bi-play"></i><small>Bắt đầu chấm</small></a>
                         </td>
                     </tr>
                 <?php endforeach ?>
