@@ -1,5 +1,9 @@
 <?php
-test_server();
+
+# [MODEL]
+model('public','show_event');
+
+# [HANDLE]
 // Case : Xác thực quyền BTC
 if(isset($_POST['admin_verify']) && $_POST['admin_verify']) {
     $input_verify = $_POST['admin_verify'];
@@ -10,4 +14,5 @@ if(isset($_POST['admin_verify']) && $_POST['admin_verify']) {
     }else toast_create('failed','Mật khẩu xác thực không chính xác !');
 }
 
+# [RENDER]
 view('public','btc','Setting',null);
