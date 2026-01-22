@@ -26,7 +26,7 @@
     // Sử dụng Query Selector để chọn đúng class của bạn
 const progressLine = document.getElementById('progress-line');
 const countVote = document.getElementById('count-vote');
-const apiUrl = 'https://h.vn/score/get_width/<?= get_action_uri(1) ?>';
+const apiUrl = '<?= URL ?>score/get_width/<?= get_action_uri(1) ?>';
 
 async function updateProgressBar() {
     try {
