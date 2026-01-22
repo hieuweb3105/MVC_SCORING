@@ -21,7 +21,13 @@ function pdo_get_connection()
 /**
  * Hàm dùng để INSERT, UPDATE, DELETE
  * 
- * Hàm được nâng cấp để tránh SQL Injection
+ * Ví dụ :
+ * 
+ ** INSERT INTO table (col_1,col_2) VALUES ('value_1',value_2);
+ * 
+ ** UPDATE table SET col_1 = 'value_1'
+ * 
+ ** DELETE FROM table FROM col_1 = 'value_1'
  * 
  * @param mixed $sql Câu lệnh SQL
  * @param array $args Tham số truyền vào
