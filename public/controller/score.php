@@ -5,6 +5,7 @@ $sum_score = 0;
 
 # [MODEL]
 model('public','score');
+model('public','config');
 
 // Case : Lưu chấm điểm
 if(isset($_POST['value_score']) && $_POST['value_score'] && isset($_POST['id_show']) && $_POST['id_show']) {
