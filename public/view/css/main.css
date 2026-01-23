@@ -23,34 +23,20 @@ body {
     --bs-gold-blur : #dde84941;
 
     background: url('/asset/image/bg.jpg');
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center;
     min-height: 100vh;
     background-repeat: no-repeat;
+    background-color: var(--bs-dark);
 
     color: var (--bs-light-80);
     overflow-x: hidden;
 }
 
-body.dark {
-
-    --bs-light : #2c2c2e;
-    --bs-light-80 : #2c2c2edc;
-    --bs-light-60 : #2c2c2ea5;
-    --bs-light-40 : #2c2c2e7b;
-
-    --bs-light-shadow : #2c2c2e2e;
-
-    --bs-dark : #f4f4f4;
-    --bs-dark-80 : #f4f4f4dc;
-    --bs-dark-60 : #f4f4f4a5;
-    --bs-dark-50 : #f4f4f47b;
-    --bs-dark-bold : #f3f3f3;
-    
-    --bs-shadow-header : #2c2c2e2e;
-    --bs-shadow-box-light : #525252;
-    --bs-shadow-box-dark : #141414;
-
+@media (min-width:1199px) {
+    body {
+        background-size: 100% 100%;
+    }
 }
 
 .box {
@@ -68,17 +54,27 @@ body.dark {
     text-wrap: nowrap;
 }
 
-.btn-outline-light {
-    color: var(--bs-light-80) !important;
+.btn-outline-light, .btn-outline-light.disabled {
+    color: var(--bs-light) !important;
     background: var(--bs-light-20);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
+    border : 2px solid var(--bs-light-80);
+    box-shadow: 0 0 2px 1px var(--bs-light-60);
     border-color: var(--bs-light-60) !important;
+    transition: calc(.5s);
 }
+
+ .btn-outline-light.disabled {
+    background: var(--bs-light-20);
+    border : 1px solid var(--bs-light);
+    box-shadow: none;
+ }
 
 .btn-outline-light:hover, .btn-outline-light.active {
     color: var(--bs-light) !important;
-    border-color: var(--bs-light-80) !important;
-    background: var(--bs-light-40);
+    border-color: var(--bs-dark-80) !important;
+    background: var(--bs-dark-40);
+    transition: calc(.5s);
 }
 
 .btn-outline-dark {

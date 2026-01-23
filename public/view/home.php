@@ -9,10 +9,11 @@
             $get_score_here = get_one_score_by_token_guest($id_show_event);
             if($get_score_here) $case_redirect = 'show';
         ?>
-            <a href="/<?= $case_redirect ?>/<?= $id_show_event?>" class="btn btn-outline-light text-wrap py-3 ps-4 <?= ($state_show_event=='close') ? 'disabled' : '' ?>">
-                <?= $name_show_event ?>
+            <a href="/<?= $case_redirect ?>/<?= $id_show_event?>" class="btn btn-outline-light text-wrap py-3 ps-4 d-flex flex-column flex-lg-row <?= ($state_show_event=='close') ? 'disabled' : '' ?>">
+                <div class=""><?= $name_show_event ?></div>
                 <?php if($state_show_event == 'open') : ?>
-                     | <span class="small"><?= ($get_score_here) ? 'Đã bình chọn : '.$get_score_here : 'Chưa bình chọn' ?></span>
+                    <div class="d-none d-lg-block">|</div>
+                    <div class="text-light-60"><?= ($get_score_here) ? 'Đã bình chọn : '.$get_score_here : 'Chưa bình chọn' ?></div>
                 <?php endif ?>
                 <div class="position-absolute start-0 top-10 ps-2 ps-lg-3 d-flex align-items-center">
                     <?php if($state_show_event == 'open') : ?>
