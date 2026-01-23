@@ -1,7 +1,11 @@
 <link rel="stylesheet" href="<?= URL_P_V ?>css/btc_home.css">
 
 <?php if ($_SESSION['btc'] !== 'verify'): ?>
-    <div style="height:80vh" class="d-flex align-items-center justify-content-center px-3">
+    <div class="d-flex flex-column align-items-center justify-content-center px-3">
+        
+    <div style="padding-top:8vh;padding-bottom:8vh;color:#acb25a" class="display-5 fw-bold text-center">
+        BTC Site
+    </div>
         <div class="d-flex flex-column gap-3 col-12 col-md-6 col-lg-4">
             <form action="/btc" method="post" class="d-flex flex-column align-items-center">
                 <label for="admin_verify" class="text-light mb-2">Nhập mật khẩu xác thực</label>
@@ -12,7 +16,9 @@
     </div>
 
 <?php else: ?>
-
+    <div style="padding-top:4vh;padding-bottom:4vh;color:#acb25a" class="display-5 fw-bold text-center">
+        Danh Sách Tiết Mục
+    </div>
     <div class="row justify-content-center align-items-center">
         <div class="col-12 col-md-8 mt-lg-5">
             <table class="table table-dark table-hover">
