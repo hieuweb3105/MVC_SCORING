@@ -6,12 +6,20 @@ $sum_score = 0;
 # [MODEL]
 model('public','score');
 model('public','config');
+model('public','show_event');
 
 // Case : Lưu chấm điểm
 if(isset($_POST['value_score']) && $_POST['value_score'] && isset($_POST['id_show']) && $_POST['id_show']) {
     // input
     $input_id_show = $_POST['id_show'];
     $input_score = $_POST['value_score'];
+    // validate state show
+    if(show_get_state($input_id_show) == 'close') {
+        toast_create('failed','Tiết mục này đã đóng bình chọn');
+        route('show/'.$input_id_show);
+    }
+    // validate cofirm scored
+    if(get_one_score_by_token_guest($input_id_show)) view_error(400);
     // save
     save_score($input_id_show,$input_score);
     // route

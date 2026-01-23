@@ -21,3 +21,15 @@ function get_one_show_by_id($id_show) {
         ,$id_show
     );
 }
+
+/**
+ * Lấy trạng thái theo ID SHOW
+ * @param mixed $id_show
+ * @return int|string
+ */
+function show_get_state($id_show) {
+    return pdo_query_value(
+        'SELECT state_show_event FROM show_event WHERE id_show_event = ?'
+        ,$id_show
+    );
+}

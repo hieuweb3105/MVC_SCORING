@@ -5,6 +5,7 @@
 # [MODEL]
 model('public','show_event');
 model('public','config');
+model('public','score');
 
 # [DATA]
 $data = [

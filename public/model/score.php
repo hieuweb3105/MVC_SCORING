@@ -28,6 +28,20 @@ function get_list_score_by_token_guest() {
 }
 
 /**
+ * Lấy danh sách đã chấm điểm theo token guest
+ * @return string
+ */
+function get_one_score_by_token_guest($id_show) {
+    if(!empty($_COOKIE['token_guest'])) {
+        return pdo_query_value(
+            'SELECT score FROM score WHERE token_guest = ? AND id_show_event = ?',
+            $_COOKIE['token_guest'], $id_show
+        );
+    }
+    return 0;
+}
+
+/**
  * Lấy danh sách đã chấm điểm theo id show
  * @param mixed $id_show
  * @return array
