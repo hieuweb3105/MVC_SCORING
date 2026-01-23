@@ -19,8 +19,8 @@ body {
     --bs-shadow-box-light : transparent;
     --bs-shadow-box-dark : transparent;
 
-    --bs-gold : #dde849;
-    --bs-gold-blur : #dde84941;
+    --bs-gold : #ffc400;
+    --bs-gold-blur : #ffc40041;
 
     background: url('/asset/image/bg.jpg');
     background-size: auto 100%;

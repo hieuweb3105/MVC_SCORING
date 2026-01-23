@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="<?= URL_P_V ?>css/show.css?v=1.0.2">
+<link rel="stylesheet" href="<?= URL_P_V ?>css/show.css?v=1.0.3">
 
 <div style="padding-top:8vh;padding-bottom:8vh;color:#acb25a" class="display-5 fw-bold text-center">
     Công Bố Kết Quả

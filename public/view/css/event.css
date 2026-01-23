@@ -2,8 +2,9 @@
     width: 88px;
     height: 88px;
     font-size: 24px;
-    color: #9c8741 !important;
-    border-color: #9c8741 !important;
+    color: var(--bs-gold) !important;
+    border-color: var(--bs-gold) !important;
+    transition: calc(.5s);
 }
 
 .show-score {
@@ -23,9 +24,10 @@
 }
 
 .btn-score:hover, .btn-score:focus, .btn-score:active {
-    color: #e3c562 !important;
-    border-color: #e3c562 !important;
-    background: #ded3ac7e;
+    color: var(--bs-gold) !important;
+    border-color: var(--bs-gold) !important;
+    background: var(--bs-gold-blur);
+    transition: calc(.5s);
 }
 
 .bg-modal {

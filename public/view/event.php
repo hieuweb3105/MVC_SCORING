@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="<?= URL_P_V ?>css/event.css">
+<link rel="stylesheet" href="<?= URL_P_V ?>css/event.css?v=1.0.1">
 
 <div style="padding-top:15vh" class="d-flex flex-column align-items-center justify-content-center gap-3">
 

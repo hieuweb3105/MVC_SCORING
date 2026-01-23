@@ -20,7 +20,7 @@
     <!-- CDN Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- CSS Custom -->
-    <link rel="stylesheet" href="<?= URL_P_V ?>css/main.css?v=1.0.7">
+    <link rel="stylesheet" href="<?= URL_P_V ?>css/main.css?v=1.0.8">
     <link rel="stylesheet" href="<?= URL_P_V ?>css/header.css?v=1.0.4">
     <link rel="stylesheet" href="<?= URL_P_V ?>css/footer.css">
 </head>
@@ -30,6 +30,10 @@
 <body class="">
 
     <div class="linear-bg"></div>
+
+    <div style="top:6vh" class="position-absolute start-50 translate-middle">
+        <img width="60" class="rounded-2" src="<?= URL_A ?>image/favicon.png" alt="logo">
+    </div>
 
     <div
         class="d-flex flex-wrap justify-content-end p-3 gap-2 mb-5  animate__animated animate__fadeIn animate__delay-1s">
