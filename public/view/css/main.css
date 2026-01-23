@@ -249,3 +249,13 @@ body {
 .blur-6 {
     backdrop-filter: blur(6px);
 }
+
+.bi-dot.text-success {
+    color: #59ff00 !important;
+    font-size: 40px !important;
+}
+
+.bi-dot.text-danger {
+    color: #ff0000 !important;
+    font-size: 32px !important;
+}

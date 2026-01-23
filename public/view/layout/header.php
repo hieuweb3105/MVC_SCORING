@@ -20,7 +20,7 @@
     <!-- CDN Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- CSS Custom -->
-    <link rel="stylesheet" href="<?= URL_P_V ?>css/main.css?v=1.0.8">
+    <link rel="stylesheet" href="<?= URL_P_V ?>css/main.css?v=1.0.9">
     <link rel="stylesheet" href="<?= URL_P_V ?>css/header.css?v=1.0.4">
     <link rel="stylesheet" href="<?= URL_P_V ?>css/footer.css">
 </head>
