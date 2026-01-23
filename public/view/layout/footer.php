@@ -13,6 +13,7 @@
 <!-- CDN JQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+<?php if(BOOL_TEST) : ?>
 <div class="text-light-40 small position-absolute bottom-0 pb-1 ps-2">
     <div class="">
         <small>[test area]</small>
@@ -30,5 +31,5 @@
     </div>
     <?php endforeach ?>
 </div>
-
+<?php endif ?>
 </html>

@@ -57,6 +57,7 @@ const MAILER_HOST       = 'smtp.gmail.com';
 const BOOL_CHATIVE      = false;         //  tính năng chat trực tuyến chative
 const BOOL_SPINNER      = false;         //  hiệu ứng tải trang
 const BOOL_UPGRADE      = false;         //  trang bảo trì
+const BOOL_TEST         = true ;         //  dữ liệu test
 const BOOL_LOADER       = false;         //  hiệu ứng page loader
 
 //  [*] TIME CUSTOM
