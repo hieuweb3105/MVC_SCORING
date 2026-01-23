@@ -14,7 +14,7 @@
                 <?php if($state_show_event == 'open') : ?>
                      | <span class="small"><?= ($get_score_here) ? 'Đã bình chọn : '.$get_score_here : 'Chưa bình chọn' ?></span>
                 <?php endif ?>
-                <d class="position-absolute start-0 top-10 ps-2 ps-lg-3 d-flex align-items-center">
+                <div class="position-absolute start-0 top-10 ps-2 ps-lg-3 d-flex align-items-center">
                     <?php if($state_show_event == 'open') : ?>
                         <i class="bi bi-dot text-success fs-1 animate__animated animate__zoomIn animate__infinite"></i>
                         <small class="d-none d-lg-block">Đang mở</small>
@@ -22,7 +22,7 @@
                         <i class="bi bi-dot text-danger fs-3 animate__animated animate__fadeIn"></i>
                         <small class="d-none d-lg-block">Đang đóng</small>
                     <?php endif ?>
-                </d>
+                </div>
             </a>
         <?php endforeach ?>
     </div>

@@ -33,3 +33,17 @@ function show_get_state($id_show) {
         ,$id_show
     );
 }
+
+function show_close_by_id($id_show) {
+    pdo_execute(
+        'UPDATE show_event SET state_show_event = "close" WHERE id_show_event = ?'
+        ,$id_show
+    );
+}
+
+function show_open_by_id($id_show) {
+    pdo_execute(
+        'UPDATE show_event SET state_show_event = "open" WHERE id_show_event = ?'
+        ,$id_show
+    );
+}
