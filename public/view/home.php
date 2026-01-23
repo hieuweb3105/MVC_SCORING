@@ -4,10 +4,10 @@
     <div class="d-flex flex-column gap-3 col-12 col-md-8 col-lg-6">
         <h4 class="text-light text-center mb-5">Chọn tiết mục để chấm điểm</h4>
         <?php foreach ($list_show as $show): 
+            $case_redirect = 'event';
             extract($show);
             $get_score_here = get_one_score_by_token_guest($id_show_event);
             if($get_score_here) $case_redirect = 'show';
-            else $cass_redirect = 'event';
         ?>
             <a href="/<?= $case_redirect ?>/<?= $id_show_event?>" class="btn btn-outline-light text-wrap py-3 ps-4 <?= ($state_show_event=='close') ? 'disabled' : '' ?>">
                 <?= $name_show_event ?>
