@@ -32,7 +32,7 @@
     <div class="linear-bg"></div>
 
     <div style="top:6vh" class="position-absolute start-50 translate-middle">
-        <img width="60" class="rounded-2" src="<?= URL_A ?>image/favicon.png" alt="logo">
+        <img width="60" class="rounded-2" src="<?= URL_A ?>image/favicon.png?v=1.0.1" alt="logo">
     </div>
 
     <div
