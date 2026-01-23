@@ -27,7 +27,7 @@ function pdo_get_connection()
  * 
  ** UPDATE table SET col_1 = 'value_1'
  * 
- ** DELETE FROM table FROM col_1 = 'value_1'
+ ** DELETE FROM table WHERE col_1 = 'value_1'
  * 
  * @param mixed $sql Câu lệnh SQL
  * @param array $args Tham số truyền vào

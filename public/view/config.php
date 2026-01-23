@@ -25,16 +25,16 @@
                     <form action="/config" method="post">
                         <th class="fw-light">Reset chấm điểm</th>
                         <td>
-                            <select name="choose_reset" id="choose_reset" class="bg-dark text-light">
+                            <select name="reset_score" id="choose_reset" class="bg-dark text-light">
                                 <option disabled selected value="0">- Chọn tiết mục reset -</option>
-                                <option value="-1">- Tất cả -</option>
+                                <option value="-1">Tất cả tiết mục</option>
                                 <?php foreach (get_list_show() as $show) : ?>
-                                <option value="<?= $show['id_show_event'] ?>">"<?= $show['name_show_event'] ?></option>
+                                <option value="<?= $show['id_show_event'] ?>"><?= $show['name_show_event'] ?></option>
                                 <?php endforeach ?>
                             </select>
                         </td>
                         <td class="d-flex justify-content-end flex-column flex-lg-row gap-1">
-                            <button type="submit" name="change_config_guest" class="btn btn-sm btn-outline-danger" title="Nhấn để lưu lại"><i class="bi bi-arrow-repeat"></i> Reset</button>
+                            <button type="submit" name="btn_reset_score" class="btn btn-sm btn-outline-danger" title="Nhấn để lưu lại"><i class="bi bi-arrow-repeat"></i> Reset</button>
                         </td>
                     </form>
                 </tr>

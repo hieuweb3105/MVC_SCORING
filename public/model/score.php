@@ -71,3 +71,16 @@ function get_average_score($id_show) {
     }
     return 0;
 }
+
+function score_reset_all() {
+    pdo_execute(
+        'DELETE FROM score'
+    );
+}
+
+function score_reset_by_id($id_show) {
+    pdo_execute(
+        'DELETE FROM score WHERE id_show_event = ?'
+        ,$id_show
+    );
+}
