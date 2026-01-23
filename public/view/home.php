@@ -2,7 +2,7 @@
 
 <div class="d-flex align-items-center justify-content-center px-3">
     <div class="d-flex flex-column gap-3 col-12 col-md-8 col-lg-6">
-        <h4 class="text-light text-center mb-5">Chọn tiết mục để chấm điểm</h4>
+        <h4 class="text-light text-center mb-5">ON Mixtape Showcase: Real-time Scoring</h4>
         <?php foreach ($list_show as $show): 
             $case_redirect = 'event';
             extract($show);
