@@ -4,7 +4,18 @@
     <div class="d-flex flex-column gap-3 col-12 col-md-8 col-lg-6">
         <h4 class="text-light text-center mb-5">Chọn tiết mục để chấm điểm</h4>
         <?php foreach ($list_show as $show): extract($show) ?>
-            <a href="/event/<?= $id_show_event?>" class="btn btn-outline-light text-wrap py-3"><?= $name_show_event ?></a>
+            <a href="/event/<?= $id_show_event?>" class="btn btn-outline-light text-wrap py-3 ps-4 <?= ($state_show_event=='close') ? 'disabled' : '' ?>">
+                <?= $name_show_event ?>
+                <d class="position-absolute start-0 top-10 ps-2 ps-lg-3 d-flex align-items-center">
+                    <?php if($state_show_event == 'open') : ?>
+                        <i class="bi bi-dot text-success fs-1 animate__animated animate__zoomIn animate__infinite"></i>
+                        <small class="d-none d-lg-block">Đang mở</small>
+                    <?php else : ?>
+                        <i class="bi bi-dot text-danger fs-3 animate__animated animate__fadeIn"></i>
+                        <small class="d-none d-lg-block">Đang đóng</small>
+                    <?php endif ?>
+                </d>
+            </a>
         <?php endforeach ?>
     </div>
 </div>
