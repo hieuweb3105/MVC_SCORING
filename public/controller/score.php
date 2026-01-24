@@ -39,5 +39,6 @@ if(get_action_uri(1) === 'get_width' && get_action_uri(2)) {
 }
 
 view_json(400,[
-    'message' => 'Bad Request'
+    'message' => 'Bad Request',
+    'go_home' => URL
 ]);

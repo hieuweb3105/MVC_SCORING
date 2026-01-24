@@ -25,4 +25,4 @@ $data = [
 ];
 
 # [RENDER]
-view('public','show','Trình chiếu',$data);
+view('public','show','Slide Show',$data);

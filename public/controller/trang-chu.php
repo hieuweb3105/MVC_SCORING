@@ -13,4 +13,4 @@ $data = [
 ];
 
 # [RENDER]
-view('public','home','Trang chủ',$data);
+view('public','home','Home',$data);

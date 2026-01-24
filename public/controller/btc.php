@@ -11,9 +11,9 @@ if(isset($_POST['admin_verify']) && $_POST['admin_verify']) {
     $input_verify = $_POST['admin_verify'];
     if(password_verify($input_verify,'$2y$10$3q4JO0xnkM1rQk/TnwLj/etaTfB7UWIPJElvqWqCQK0TsdUvDh99O')) {
         $_SESSION['btc'] = 'verify';
-        toast_create('success','Xác thực thành công !');
+        toast_create('success','Confirm successfully !');
         route('btc');
-    }else toast_create('failed','Mật khẩu xác thực không chính xác !');
+    }else toast_create('failed','Password is incorrect !');
 }
 
 // Case : Đóng tiết mục
@@ -25,7 +25,7 @@ if(get_action_uri(1) == 'close_show' && get_action_uri(2)) {
    // update
    show_close_by_id($input_id_show);
    // toast
-   toast_create('success','Đóng bình chọn thành công');
+   toast_create('success','Close show successfully !');
    // route
    route('/btc');
 
@@ -40,7 +40,7 @@ if(get_action_uri(1) == 'open_show' && get_action_uri(2)) {
    // update
    show_open_by_id($input_id_show);
    // toast
-   toast_create('success','Mở bình chọn thành công');
+   toast_create('success','Open show successfully !');
    // route
    route('/btc');
 }
@@ -52,6 +52,6 @@ $data = [
 
 # [RENDER]
 // Site verify
-if($_SESSION['btc'] !== 'verify') view('public','btc_verify','Xác thực',$data);
+if($_SESSION['btc'] !== 'verify') view('public','btc_verify','Confirm',$data);
 // Site main
-view('public','btc','Setting',$data);
+view('public','btc','Config',$data);

@@ -15,4 +15,4 @@ $data = [
 ];
 
 # [RENDER]
-view('public','show_all','Công bố kết quả',$data);
+view('public','show_all','Result Announcement',$data);

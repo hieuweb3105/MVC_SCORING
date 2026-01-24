@@ -18,12 +18,12 @@ if(get_action_uri(1)) {
     if(!$get_show) view_error(400);
     // validate state show
     if(show_get_state($input_id_show) == 'close') {
-        toast_create('failed','Tiết mục chưa được mở bình chọn.');
+        toast_create('failed','This show is not opened !');
         route();
     }
     // validate confirm scored
     if(get_one_score_by_token_guest($input_id_show)) {
-        toast_create('failed','Bạn đã bình chọn rồi.');
+        toast_create('failed','You has already voted !');
         route('show/'.$input_id_show);
     }
 }else view_error(400);
@@ -34,4 +34,4 @@ $data = [
 ];
 
 # [RENDER]
-view('public','event','Chấm điểm',$data);
+view('public','event','Vote rating',$data);
