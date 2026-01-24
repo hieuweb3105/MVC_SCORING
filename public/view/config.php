@@ -6,28 +6,28 @@
         <table class="table table-dark table-hover">
             <thead>
                 <tr>
-                    <th class="col-8">Loại cấu hình</th>
-                    <th class="col-2">Giá trị</th>
-                    <th class="col-2 text-end pe-lg-3">Hành động</th>
+                    <th class="col-8">Type</th>
+                    <th class="col-2">Value</th>
+                    <th class="col-2 text-end pe-lg-3">Action</th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="align-middle fw-light">
                     <form action="/config" method="post">
-                        <th class="fw-light">Tổng số lượt vote</th>
+                        <th class="fw-light">Total of turn vote</th>
                         <td><input type="number" name="config_guest" id="config_guest" value="<?= config_get_value('config_guest')?>" class="bg-dark text-light"></td>
                         <td class="d-flex justify-content-end flex-column flex-lg-row gap-1">
-                            <button type="submit" name="change_config_guest" class="btn btn-sm btn-outline-light" title="Nhấn để lưu lại"><i class="bi bi-save"></i> Lưu</button>
+                            <button type="submit" name="change_config_guest" class="btn btn-sm btn-outline-light" title="Nhấn để lưu lại"><i class="bi bi-save"></i> Save</button>
                         </td>
                     </form>
                 </tr>
                 <tr class="align-middle fw-light">
                     <form action="/config" method="post">
-                        <th class="fw-light">Reset chấm điểm</th>
+                        <th class="fw-light">Reset score</th>
                         <td>
                             <select name="reset_score" id="choose_reset" class="bg-dark text-light">
-                                <option disabled selected value="0">- Chọn tiết mục reset -</option>
-                                <option value="-1">Tất cả tiết mục</option>
+                                <option disabled selected value="0">- Select show to reset -</option>
+                                <option value="-1">All show</option>
                                 <?php foreach (get_list_show() as $show) : ?>
                                 <option value="<?= $show['id_show_event'] ?>"><?= $show['name_show_event'] ?></option>
                                 <?php endforeach ?>

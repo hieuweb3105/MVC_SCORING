@@ -38,12 +38,12 @@
     <div
         class="d-flex flex-wrap justify-content-end p-3 gap-2 mb-5  animate__animated animate__fadeIn animate__delay-1s">
         <?php if ($_SESSION['btc'] === 'verify'): ?>
-            <a href="/config" class="btn btn-sm btn-outline-light"> <i class="bi bi-gear"></i> <span class="d-none d-lg-block">Cấu hình</span></a>
-            <a href="/show_all" class="btn btn-sm btn-outline-light"> <i class="bi bi-easel"></i> <span class="d-none d-lg-block">Trình chiếu tất cả</span></a>
-            <a href="/btc" class="btn btn-sm btn-outline-light"> <i class="bi bi-list"></i> <span class="d-none d-lg-block">Danh sách tiết mục</span></a>
-            <a href="/" class="btn btn-sm btn-outline-light"> <i class="bi bi-house"></i> <span class="d-none d-lg-block">Trang chủ</span></a>
+            <a href="/config" class="btn btn-sm btn-outline-light"> <i class="bi bi-gear"></i> <span class="d-none d-lg-block">Config</span></a>
+            <a href="/show_all" class="btn btn-sm btn-outline-light"> <i class="bi bi-easel"></i> <span class="d-none d-lg-block">Slide Show All</span></a>
+            <a href="/btc" class="btn btn-sm btn-outline-light"> <i class="bi bi-list"></i> <span class="d-none d-lg-block">List Show</span></a>
+            <a href="/" class="btn btn-sm btn-outline-light"> <i class="bi bi-house"></i> <span class="d-none d-lg-block">Home</span></a>
         <?php else: ?>
             <a <?= !($page == 'home') ?: 'hidden' ?> href="/" class="btn btn-sm btn-outline-light"> <i class="bi bi-house"></i>
-                Trang chủ</a>
+                Home</a>
         <?php endif ?>
     </div>

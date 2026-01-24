@@ -5,9 +5,9 @@
     </div>
     <div class="d-flex flex-column gap-3 col-12 col-md-6 col-lg-4">
         <form action="/btc" method="post" class="d-flex flex-column align-items-center">
-            <label for="admin_verify" class="text-light mb-2">Nhập mật khẩu xác thực</label>
+            <label for="admin_verify" class="text-light mb-2">Password Confirm</label>
             <input id="admin_verify" type="password" name="admin_verify" class="form-control text-center">
-            <button id="btn_verify" disabled type="submit" class="btn btn-outline-light mt-3">Xác thực</button>
+            <button id="btn_verify" disabled type="submit" class="btn btn-outline-light mt-3">Confirm</button>
         </form>
     </div>
 </div>

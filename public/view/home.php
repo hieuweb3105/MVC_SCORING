@@ -13,15 +13,15 @@
                 <div class=""><?= $name_show_event ?></div>
                 <?php if($state_show_event == 'open') : ?>
                     <div class="d-none d-lg-block">|</div>
-                    <div class="text-light-60"><?= ($get_score_here) ? 'Đã bình chọn : '.$get_score_here : 'Chưa bình chọn' ?></div>
+                    <div class="text-light-60"><?= ($get_score_here) ? 'Voted : '.$get_score_here : 'Not voted' ?></div>
                 <?php endif ?>
                 <div class="position-absolute start-0 top-10 ps-2 ps-lg-3 d-flex align-items-center">
                     <?php if($state_show_event == 'open') : ?>
                         <i class="bi bi-dot text-success fs-1 animate__animated animate__zoomIn animate__infinite"></i>
-                        <small class="d-none d-lg-block">Đang mở</small>
+                        <small class="d-none d-lg-block">Opened</small>
                     <?php else : ?>
                         <i class="bi bi-dot text-danger fs-3 animate__animated animate__fadeIn"></i>
-                        <small class="d-none d-lg-block">Đang đóng</small>
+                        <small class="d-none d-lg-block">Closed</small>
                     <?php endif ?>
                 </div>
             </a>

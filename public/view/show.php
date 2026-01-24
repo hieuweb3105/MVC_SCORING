@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="<?= URL_P_V ?>css/show.css?v=1.0.3">
 
 <div style="padding-top:8vh;padding-bottom:8vh;color:#acb25a" class="display-5 fw-bold text-center">
-    Công Bố Kết Quả
+    Result Announcement
 </div>
 <div class="d-flex flex-column align-items-center justify-content-center col-12 col-md-8 text-center w-100 px-3">
     <div class="col-12 col-md-8 col-lg-6 d-flex flex-column gap-2">
@@ -10,7 +10,7 @@
         </div>
 
         <div class="text-light-80 mt-3 mb-2">
-            Mức điểm đạt được hiện tại
+            Current Score
         </div>
 
         <div class="progress-group">
@@ -20,7 +20,7 @@
 </div>
 
 <div class="position-absolute end-0 bottom-0 small text-light-80 p-3">
-    Lượt vote : <span id="count-vote" class="text-light">...</span>
+    No. Voted : <span id="count-vote" class="text-light">...</span>
 </div>
 <script>
     // Sử dụng Query Selector để chọn đúng class của bạn
