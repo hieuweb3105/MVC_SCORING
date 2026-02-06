@@ -29,7 +29,7 @@
                                 <option disabled selected value="0">- Select show to reset -</option>
                                 <option value="-1">All show</option>
                                 <?php foreach (get_list_show() as $show) : ?>
-                                <option value="<?= $show['id_show_event'] ?>"><?= $show['name_show_event'] ?></option>
+                                <option value="<?= $show['id_show_event'] ?>"><?= limit_words($show['name_show_event'],15) ?></option>
                                 <?php endforeach ?>
                             </select>
                         </td>

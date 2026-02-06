@@ -741,3 +741,11 @@ function format_timeline($time) {
 function check_string($input) {
     return preg_match('/^[\p{L}\p{N}. _-]+$/u', $input) === 1;
 }
+
+function limit_words($string, $word_limit) {
+    $words = explode(' ', $string);
+    if (count($words) > $word_limit) {
+        return implode(' ', array_slice($words, 0, $word_limit)) . '...';
+    }
+    return $string;
+}
